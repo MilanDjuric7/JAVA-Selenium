@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "55aa4870-d587-4c8a-ad15-b7fc5dd0e407",
+		"name": "Pet Store - User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"username\": \"Milan7\",\r\n  \"firstName\": \"Milan\",\r\n  \"lastName\": \"Djuric\",\r\n  \"email\": \"milan.djuric.7@hotmail.com\",\r\n  \"password\": \"#Nenad7!\",\r\n  \"phone\": \"0641234567\",\r\n  \"userStatus\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"username\": \"Milan12345\",\r\n  \"firstName\": \"Milan\",\r\n  \"lastName\": \"Djuric\",\r\n  \"email\": \"milan.djuric.7@hotmail.com\",\r\n  \"password\": \"#Nenad7!\",\r\n  \"phone\": \"0641234567\",\r\n  \"userStatus\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/Milan7",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"Milan7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User by User name",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
